@@ -1,28 +1,4 @@
 {
   "files": [],
-  "references": [{ "path": "./tsconfig.app.json" }, { "path": "./tsconfig.node.json" }],
-  "compilerOptions": {
-    "baseUrl": ".",
-    "paths": {
-      "@/*": ["./src/*"]
-    },
-    "verbatimModuleSyntax": false,
-    "strict": false,
-    "noImplicitAny": false,
-    "noImplicitThis": false,
-    "useUnknownInCatchVariables": false,
-    "exactOptionalPropertyTypes": false,
-    "noUncheckedIndexedAccess": false,
-    "noPropertyAccessFromIndexSignature": false,
-    "esModuleInterop": true,
-    "allowSyntheticDefaultImports": true,
-    "allowJs": true,
-    "checkJs": false,
-    "resolveJsonModule": true,
-    "isolatedModules": false,
-    "skipLibCheck": true,
-    "forceConsistentCasingInFileNames": false,
-    "noEmitOnError": false,
-    "declaration": false
-  }
+  "references": [{ "path": "./tsconfig.app.json" }, { "path": "./tsconfig.node.json" }]
 }
