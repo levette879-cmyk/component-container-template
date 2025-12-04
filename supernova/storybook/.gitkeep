@@ -1,3 +1,0 @@
-# Storybook examples
-
-Add usage examples of your code into this folder. Include just the story code files (e.g., `Button.stories.tsx`) — no need to build or run Storybook. The AI uses these as references for component implementation. If you structure the stories into folders, feel free to keep them in the existing structure.
