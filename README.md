@@ -28,6 +28,7 @@ If you have any questions, please use the dedicated Slack channel we've created 
 
 - Node.js (version `20.19.0` || `>=22.12.0`).
 - `npm` for dependency management.
+- Docker installed and running
 - Access to your company's component library and design system.
 - A Supernova API token (provided by your integration engineer).
 
@@ -42,6 +43,18 @@ If you have any questions, please use the dedicated Slack channel we've created 
    ```
 
 3. **Add Your Dependencies**: Install your company's packages (e.g., components, design systems). If the design system package is not available through npm, you can also copy it into the `src/components/ds` folder.
+
+4. **Declare private dependencies**: Each NPM dependency that is coming from a private registry needs to be declared in the `package.json` file under `supernova.privateDependencies`:
+
+  ```json
+  {
+    "supernova": {
+      "privateDependencies": ["@example/package"]
+    }
+  }
+  ```
+
+5. Make sure docker daemon is running: Supernova will use docker to create a push a Docker image containing a snapshot of the project, including the dependencies.
 
 ### Package validation
 
