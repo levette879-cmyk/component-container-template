@@ -46,13 +46,13 @@ If you have any questions, please use the dedicated Slack channel we've created 
 
 4. **Declare private dependencies**: Each NPM dependency that is coming from a private registry needs to be declared in the `package.json` file under `supernova.privateDependencies`:
 
-  ```json
-  {
-    "supernova": {
-      "privateDependencies": ["@example/package"]
-    }
-  }
-  ```
+   ```json
+   {
+     "supernova": {
+       "privateDependencies": ["@example/package"]
+     }
+   }
+   ```
 
 5. Make sure docker daemon is running: Supernova will use docker to create a push a Docker image containing a snapshot of the project, including the dependencies.
 
