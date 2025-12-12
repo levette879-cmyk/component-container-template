@@ -54,7 +54,7 @@ If you have any questions, please use the dedicated Slack channel we've created 
    }
    ```
 
-5. Make sure docker daemon is running: Supernova will use docker to create a push a Docker image containing a snapshot of the project, including the dependencies.
+5. **Make sure docker daemon is running**: Supernova will use docker to create a push a Docker image containing a snapshot of the project, including the dependencies.
 
 ### Package validation
 
