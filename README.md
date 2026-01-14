@@ -181,15 +181,19 @@ Add providers, wrappers, and global setup here to ensure consistency across prot
   );
   ```
 
+
 ### AI-Specific Configuration
 
 To optimize AI-generated outputs:
 
-- **Agent Rules**: Place AI behavior guidelines in `/supernova/supernova-agent.md`. This Markdown file can include coding preferences, best practices, or rules (e.g., "Always use hooks for state; prefer functional components"). Supernova analyzes this to guide AI. It should also, ideally, contain information about how to work with the design system and some examples of what to do and what not.
+- **Agent Rules**: Add Markdown files in `/supernova` to guide AI behavior and code generation. Use the following files:
+  - `components.md` – Guidelines for component usage, naming, and best practices.
+  - `icons.md` – Rules and conventions for icon rendering and usage.
+  - `usage.md` – General usage instructions, including tokens, layouts, code style, and other conventions.
 
-If you are already using `.cursorrules` or similar, you can just copy and paste that into the rule file.
+Supernova analyzes these files to guide AI. You can copy content from existing rule files (like `.cursorrules`) into the appropriate Markdown files.
 
-- **Storybook Examples**: Add usage examples in `/supernova/storybook/`. Include just the story code files (e.g., `Button.stories.tsx`) - no need to build or run Storybook. The AI uses these as references for component implementation.
+- **Storybook Examples**: Add usage examples in `/supernova/storybook/`. Include just the story code files (e.g., `Button.stories.tsx`) – no need to build or run Storybook. The AI uses these as references for component implementation.
 
 ## Authentication & Security
 
