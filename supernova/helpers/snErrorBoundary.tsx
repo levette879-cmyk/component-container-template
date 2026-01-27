@@ -130,6 +130,7 @@ export class SnErrorBoundary extends Component<ErrorBoundaryProps, ErrorBoundary
             message: error?.message ?? "Unknown error",
             stack: error?.stack,
             componentStack: errorInfo.componentStack,
+            url: window.location.href,
           },
         },
         "*"
