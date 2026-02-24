@@ -29,3 +29,10 @@
     "vite": "^7.1.4"
   }
 }
+```
+"backpack-react-scripts": {   
+   "babelIncludePrefixes": [
+            “@skyscanner[\\/]backpack-web[\\/\bpk-”
+            ]
+},
+```
