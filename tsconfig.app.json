@@ -43,3 +43,5 @@
   "include": ["src", "supernova"]
 }
 `npm start`
+`npm install bpk-component-calendar --save-dev`.
+
